@@ -1,12 +1,18 @@
-# Operator — your "second me"
+# Operator — my "second me"
 
-A fractional-product-operator sidekick that finds signals,
-tracks a BD pipeline, and drafts outreach + content in your voice. Built on the
+The AI agent I use to run business development for my fractional product
+practice: it hunts for prospects, tracks my pipeline, drafts outreach in my
+voice, and books my calls. Built on the
 [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python).
 
-It's a **foundation, not a finished product** — today it does the BD + signals +
-outreach loop end-to-end. Calendar, social scheduling, and ops bolt on as new
-tools (see *Growing your agent* below).
+This is the real thing, not a demo — a clean snapshot of my private working
+repo, which stays private only because it carries my live pipeline data. The
+code here is the code I run. It does the discovery → outreach → scheduling loop
+end-to-end today; social scheduling and ops bolt on as new tools (see *Growing
+your agent* below).
+
+It's also built to be forked: rewrite one prose file and it stops being my
+agent and becomes yours (see [Make it yours](#make-it-yours)).
 
 ## Run it
 
@@ -59,11 +65,14 @@ Everything it remembers is plain files you own under `data/` (pipeline,
 candidates, drafts, learned rules). Your Obsidian vault stays the source of truth —
 it reads your offer/voice/People notes but never edits them.
 
-## Make it sound like you
+## Make it yours
 
-Open [`second_me/identity.md`](second_me/identity.md) and edit it. That file *is*
-the agent's personality, voice, ICP, and priorities — no code changes needed.
-The more specific you make it, the more it feels like a second you.
+Fork this repo, open [`second_me/identity.md`](second_me/identity.md), and
+rewrite it — that file *is* the agent's personality, voice, ICP, and priorities
+(mine, until you change them; no code changes needed). Then copy
+`second_me/availability.json` to `data/availability.json` and put your real
+schedule in that gitignored copy. The more specific you make both, the more it
+feels like a second you.
 
 ## Growing your agent (the fun part)
 
