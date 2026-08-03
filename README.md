@@ -1,6 +1,6 @@
 # Operator — your "second me"
 
-Your first AI agent: a fractional-product-operator sidekick that finds signals,
+A fractional-product-operator sidekick that finds signals,
 tracks a BD pipeline, and drafts outreach + content in your voice. Built on the
 [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python).
 
