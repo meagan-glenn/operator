@@ -1,0 +1,24 @@
+{
+  "$comment": "Committed Claude Code settings — shared with anyone who clones the repo. This is DEV-TIME config (Claude Code working ON this codebase); it is NOT the Operator runtime's permission gate (that lives in second_me/permissions.py). Personal, machine-specific overrides go in .claude/settings.local.json (gitignored).",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(ls:*)",
+      "Bash(python -m second_me:*)",
+      "Bash(python -m second_me.connect_google:*)",
+      "Bash(pip install -r requirements.txt)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(credentials.json)",
+      "Read(data/google_tokens/**)",
+      "Read(data/google_token.json)"
+    ]
+  }
+}

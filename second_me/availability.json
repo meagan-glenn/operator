@@ -1,0 +1,22 @@
+{
+  "_note": "GENERIC EXAMPLE — copy this file to data/availability.json (gitignored) and edit that copy with your real schedule. When data/availability.json exists it wins; this packaged file is just a safe, working default.",
+  "timezone": "America/Los_Angeles",
+  "_timezone_note": "The agent parses times in this timezone and always shows proposed slots in both PT and ET.",
+  "working_hours": { "start": "09:00", "end": "17:00" },
+  "default_call_minutes": 30,
+  "buffer_minutes": 15,
+  "no_meeting_days": ["Saturday", "Sunday"],
+  "protected_blocks": [
+    { "label": "Deep work (no calls)", "days": ["Monday", "Wednesday", "Friday"], "start": "09:00", "end": "11:00" }
+  ],
+  "fun_time_priority": "Protect at least two personal/fun blocks each week — treat booking fun as real work.",
+  "google": {
+    "_note": "Used only when Google Calendar is connected. Conflicts are checked across ALL calendars of ALL connected accounts EXCEPT those in exclude_calendars. default_booking_account = which Google account calls are booked into (its email; empty = first connected account). default_booking_calendar 'primary' = that account's main calendar; replace with a calendar id (from `python -m second_me.connect_google`) to book elsewhere.",
+    "default_booking_account": "",
+    "default_booking_calendar": "primary",
+    "_exclude_note": "Calendars to IGNORE when checking for conflicts (busy events on these never block a call slot). Match by calendar name or id; applies across all accounts.",
+    "exclude_calendars": [
+      "Holidays in United States"
+    ]
+  }
+}

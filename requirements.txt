@@ -1,0 +1,10 @@
+claude-agent-sdk>=0.1.0
+
+# Google Calendar sync (optional — only needed once you connect Google).
+# The agent runs fine without these installed; calendar falls back to .ics + rules.
+google-api-python-client>=2.100.0
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+
+# Dev/test
+pytest>=8.0

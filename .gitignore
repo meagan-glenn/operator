@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+# Browser-bridge debug logs (may contain scraped LinkedIn page content).
+.playwright-mcp/
+# Your pipeline + calendar data is yours and local — don't commit it.
+# (availability.json here is your REAL schedule; the committed
+# second_me/availability.json is only a generic example.)
+data/availability.json
+data/crm.json
+data/drafts/
+data/calendar/
+data/events.json
+data/learned_rules.json
+data/outreach.json
+data/candidates.json
+data/linkedin/
+data/linkedin_connects.json
+data/vault_inbox/
+
+# Google OAuth secrets — NEVER commit these.
+credentials.json
+data/google_token.json
+data/google_tokens/
