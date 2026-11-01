@@ -1,18 +1,14 @@
 # Operator — my "second me"
 
-The AI agent I use to run business development for my fractional product
-practice: it hunts for prospects, tracks my pipeline, drafts outreach in my
-voice, and books my calls. Built on the
-[Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python).
+An AI agent I built to run business development for a fractional product
+practice. It finds seed to Series B founders from funding news, scores fit,
+mines a LinkedIn export for warm paths, drafts outreach in my voice, and books
+the call. When I correct it, it writes a rule and remembers next time.
 
-This is the real thing, not a demo — a clean snapshot of my private working
-repo, which stays private only because it carries my live pipeline data. The
-code here is the code I run. It does the discovery → outreach → scheduling loop
-end-to-end today; social scheduling and ops bolt on as new tools (see *Growing
-your agent* below).
-
-It's also built to be forked: rewrite one prose file and it stops being my
-agent and becomes yours (see [Make it yours](#make-it-yours)).
+Built on the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python)
+in Python. Safe by default: read-only file access, no shell, never sends
+anything on LinkedIn (it drafts, I send). Built to be forked; rewrite one prose
+file and it's your agent (see [Make it yours](#make-it-yours)).
 
 ## Run it
 
