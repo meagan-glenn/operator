@@ -1,4 +1,4 @@
-# Operator — my "second me"
+# Operator — an AI business development agent
 
 An AI agent I built to run business development for a fractional product
 practice. It finds seed to Series B founders from funding news, scores fit,
@@ -7,7 +7,7 @@ the call. When I correct it, it writes a rule and remembers next time.
 
 Built on the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python)
 in Python. Safe by default: read-only file access, no shell, never sends
-anything on LinkedIn (it drafts, I send). Built to be forked; rewrite one prose
+anything on LinkedIn (it drafts, I send). Built to be forked; edit one identity
 file and it's your agent (see [Make it yours](#make-it-yours)).
 
 ## Run it
